@@ -68,12 +68,11 @@
   <li *ngFor="let item of student|keyvalue" > {{item.key}} : {{item.value}} </li>
 </ul>
 <p>{{Message$|async}}</p>
-
+<h4>async observable</h4>
+<app-user></app-user>
 <app-child [messageFromParent]="parentMessage"
  (dataEmitter)="handleDataFromChild($event)">
 </app-child>
 <p>Data received from child:{{inputValue}}</p>
 <app-promise></app-promise>
 <p appHighlight>This text is highlighted</p>
-<h4>async observable</h4>
-<app-user></app-user>
