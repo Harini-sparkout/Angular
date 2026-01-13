@@ -1,7 +1,6 @@
 import { CommonModule } from '@angular/common';
-import { Component, signal } from '@angular/core';
+import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { RouterOutlet } from '@angular/router';
 import { CustomPipeNamePipe } from './custom-pipe-name-pipe';
 import { Child } from './child/child';
 import { Observable, of } from 'rxjs';
