@@ -1,0 +1,16 @@
+
+<h4>angular directives</h4>
+<ul>
+    <li *ngFor = "let user of users">{{user}}</li>
+</ul>
+
+<h3 *ngIf="showMessage">this meassage is visible because of showMessage is true</h3>
+<h3>ngswitch</h3>
+<div [ngSwitch]="status">
+    <p *ngSwitchCase="'pending'">order iss pending</p>
+    <p *ngSwitchCase="'approved'">order is approved</p>
+    <p *ngSwitchCase="'rejected'">order is rejected</p>
+    <p *ngSwitchDefault>unknown status</p>
+</div>
+<h3 [ngClass]="{'highlight':isHighlighted}">text uses ng classes</h3>
+<h3 [ngStyle]="{'color':'blue','font-size.px': fontSize}">this text uses ngstyle to set color and fontsize</h3>
