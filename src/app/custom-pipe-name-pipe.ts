@@ -6,8 +6,9 @@ import { Pipe, PipeTransform } from '@angular/core';
 })
 export class CustomPipeNamePipe implements PipeTransform {
 constructor(private grade: Grade){}
-  transform(value: unknown, ...args: unknown[]): unknown {
-    return value;
+  transform(mark: number):string {
+    return this.grade.getGrade(mark);
   }
+
 
 }
