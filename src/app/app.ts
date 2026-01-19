@@ -24,7 +24,7 @@ export class App{
   userCount = 130;
   isLoggedIn = false;
   someValue= 'angular pipe';
-
+name='suganthi';
   getWelcomeMessage(): string{
     return 'welcome back'
   }
