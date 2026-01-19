@@ -5,7 +5,7 @@ import { Pipe, PipeTransform } from '@angular/core';
   standalone:true
 })
 export class CustomPipeNamePipe implements PipeTransform {
-
+constructor(private grade: Grade){}
   transform(value: unknown, ...args: unknown[]): unknown {
     return value;
   }
