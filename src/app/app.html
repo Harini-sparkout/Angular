@@ -58,10 +58,7 @@
 </ul>
 
 <h4>custom directive</h4>
-<p>custom pipe:{{ someValue | customPipeName }}</p>
-<p> pipe upper case:{{employee  | uppercase}}</p>
-<p>{{price|currency:'INR'}}</p>
-<P>{{today|date}}</P>
+
 
 
 <ul>
@@ -76,3 +73,15 @@
 <p>Data received from child:{{inputValue}}</p>
 <app-promise></app-promise>
 <p appHighlight>This text is highlighted</p>
+
+<app-greeting></app-greeting>
+<h4>pipes in angular</h4>
+<p>custom pipe:{{ someValue | customPipeName }}</p>
+<p> pipe upper case:{{employee  | uppercase}}</p>
+<p>{{price|currency:'INR'}}</p>
+<P>{{today|date}}</P>
+<p>pipe chaining {{today | date:'fullDate'|uppercase}}</p>
+<p>{{name|uppercase}}</p>
+<p>slice:{{'FRAMEWORK'|lowercase|slice:0:5}}</p>
+<p>decimal:{{1234.567|number}}</p>
+<p>percetage{{0.75|percent}}</p>
