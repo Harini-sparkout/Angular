@@ -10,11 +10,10 @@ import { Observable } from 'rxjs';
 })
 export class User {
     users$: Observable<string[]> = new Observable(function (observer){
-      setTimeout(function(){
+         setInterval(function(){
         observer.next(['bala','suganthi','vijay']);
-        observer.complete();
-      },2000);
+        
+      },7000);
     })
-
     
 }
